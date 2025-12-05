@@ -14,17 +14,22 @@ const SpeakerSection = () => {
 
           <div className="bg-card-gradient bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Avatar */}
-              <div className="relative">
+              {/* Avatar - Clickable to Facebook */}
+              <a 
+                href="https://www.facebook.com/profile.php?id=61576846741246" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="relative group cursor-pointer"
+              >
                 <img 
                   src={phongMenlyImage} 
                   alt="Phong Menly - KOL AI" 
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-glow border-4 border-primary/20"
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-glow border-4 border-primary/20 transition-transform group-hover:scale-105"
                 />
                 <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
                   KOL AI
                 </div>
-              </div>
+              </a>
 
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
