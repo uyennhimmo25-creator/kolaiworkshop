@@ -41,7 +41,7 @@ const CTASection = () => {
               asChild
             >
               <a 
-                href="https://youtube.com/playlist?list=PLpEre_jY11tNPBhHM3rEtaHs-bdhmKKID&si=PLlFibZpMLEQ7GN4" 
+                href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
