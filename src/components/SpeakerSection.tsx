@@ -16,8 +16,8 @@ const SpeakerSection = () => {
             <div className="flex flex-col md:flex-row items-center gap-8">
               {/* Avatar - Clickable to Facebook */}
               <a 
-                href="https://www.facebook.com/profile.php?id=61576846741246" 
-                target="_blank" 
+                href="https://www.facebook.com/share/p/17X5HG5mUj/" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="relative group cursor-pointer"
               >
