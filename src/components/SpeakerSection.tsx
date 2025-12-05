@@ -1,7 +1,18 @@
 import { Badge } from "@/components/ui/badge";
+import { useToast } from "@/hooks/use-toast";
 import phongMenlyImage from "@/assets/phong-menly.png";
 
 const SpeakerSection = () => {
+  const { toast } = useToast();
+
+  const handleProfileClick = () => {
+    toast({
+      title: "💡 Lời nhắn nhủ",
+      description: "Hành Trình này chỉ có những kẻ điên và đang xây dựng nên đế chế của riêng mình",
+      duration: 5000,
+    });
+  };
+
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -14,11 +25,9 @@ const SpeakerSection = () => {
 
           <div className="bg-card-gradient bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Avatar - Clickable to Facebook */}
-              <a 
-                href="https://www.facebook.com/share/p/17X5HG5mUj/" 
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* Avatar - Clickable to show message */}
+              <div 
+                onClick={handleProfileClick}
                 className="relative group cursor-pointer"
               >
                 <img 
@@ -29,7 +38,7 @@ const SpeakerSection = () => {
                 <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
                   KOL AI
                 </div>
-              </a>
+              </div>
 
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
