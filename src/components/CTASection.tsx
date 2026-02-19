@@ -51,8 +51,8 @@ const CTASection = () => {
 
           <div className="bg-card rounded-2xl p-6 border border-border shadow-soft">
             <p className="text-sm text-muted-foreground mb-2">🎁 Quà tặng đặc biệt</p>
-            <p className="text-foreground font-medium">
-              Seri kiếm tiền với KOL AI - Xem ngay trên YouTube
+            <p className="text-foreground font-medium">Seri kiếm tiền với KOL AI - Xem ngay
+
             </p>
           </div>
         </div>
