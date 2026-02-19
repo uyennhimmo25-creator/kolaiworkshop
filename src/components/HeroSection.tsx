@@ -59,7 +59,7 @@ const HeroSection = () => {
             <a
               href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
               target="_blank"
-              rel="noopener noreferrer">ĐĂNG KÝ NGAY - NHẬN VÉ VIP
+              rel="noopener noreferrer">ĐĂNG KÝ NGAY - NHẬN VÉ MIỄN PHÍ
 
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               ĐĂNG KÝ NGAY - NHẬN VÉ MIỄN PHÍ
