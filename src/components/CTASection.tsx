@@ -26,18 +26,18 @@ const CTASection = () => {
               asChild>
 
               <a
-                href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
+
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer" href="https://luma.com/pvbntnaa?tk=p8vXlm">NHẬN BẢN TIN
+ KIẾM TIỀN KOL AI 2026
                 <ExternalLink className="w-5 h-5" />
                 THAM GIA NHÓM ZALO
               </a>
             </Button>
             
-            <Button
-              variant="outline"
-              size="xl"
-              asChild>
+            <Button variant="outline"
+            size="xl"
+            asChild>
 
               <a
                 href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link"
