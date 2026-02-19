@@ -28,8 +28,7 @@ const CTASection = () => {
               <a
                 href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
                 target="_blank"
-                rel="noopener noreferrer">THAM GIA NHÓM VIP
-
+                rel="noopener noreferrer">
                 <ExternalLink className="w-5 h-5" />
                 THAM GIA NHÓM ZALO
               </a>
@@ -43,8 +42,7 @@ const CTASection = () => {
               <a
                 href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link"
                 target="_blank"
-                rel="noopener noreferrer">HUẤN LUYỆN AI MIỄN PHÍ
-
+                rel="noopener noreferrer">
                 <Youtube className="w-5 h-5" />
                 Xem Seri Kiếm Tiền
               </a>
