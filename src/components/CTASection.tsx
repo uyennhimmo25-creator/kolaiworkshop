@@ -42,7 +42,7 @@ const CTASection = () => {
               <a
                 href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link"
                 target="_blank"
-                rel="noopener noreferrer">Hướng dẫn Kiếm tiền miễn phí với KOL AI
+                rel="noopener noreferrer">Xem Seri Kiếm Tiền
                 <Youtube className="w-5 h-5" />
                 Xem Seri Kiếm Tiền
               </a>
