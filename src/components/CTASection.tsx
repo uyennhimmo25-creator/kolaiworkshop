@@ -40,9 +40,9 @@ const CTASection = () => {
               asChild>
 
               <a
-                href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link"
+
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer" href="https://www.notion.so/X-Y-D-NG-CH-KOL-AI-1-NG-I-V-N-H-NH-2ee4d9a562c280b4b133ed9ff6f1f4bd?source=copy_link">
                 <Youtube className="w-5 h-5" />
                 Xem Seri Kiếm Tiền
               </a>
