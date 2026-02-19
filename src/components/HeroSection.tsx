@@ -24,7 +24,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-6">
             Workshop KOL AI
             <br />
-            <span className="text-foreground">MAKE MONEY</span>
+            <span className="text-foreground">KHAI LỘC</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -36,11 +36,11 @@ const HeroSection = () => {
         {/* Banner image */}
         <div className="flex justify-center mb-10">
           <div className="relative animate-float">
-            <img 
-              src={workshopBanner} 
-              alt="Workshop KOL AI Make Money - Ý Tưởng Điên Rồ cùng Phong Menly" 
-              className="relative w-full max-w-xl rounded-3xl shadow-card"
-            />
+            <img
+
+              alt="Workshop KOL AI Make Money - Ý Tưởng Điên Rồ cùng Phong Menly"
+              className="relative w-full max-w-xl rounded-3xl shadow-card" src="/lovable-uploads/a633e1ff-2d74-47b0-854c-d63a9fba0a91.png" />
+
           </div>
         </div>
 
@@ -50,17 +50,17 @@ const HeroSection = () => {
             👉 Bạn muốn đứng ngoài cuộc chơi AI hay muốn bắt đầu ngay hôm nay?
           </p>
           
-          <Button 
-            variant="cta" 
+          <Button
+            variant="cta"
             size="xl"
             className="group"
-            asChild
-          >
-            <a 
-              href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
+            asChild>
+
+            <a
+              href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
+              target="_blank"
+              rel="noopener noreferrer">ĐĂNG KÝ NGAY - NHẬN VÉ VIP
+
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               ĐĂNG KÝ NGAY - NHẬN VÉ MIỄN PHÍ
             </a>
@@ -71,8 +71,8 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
