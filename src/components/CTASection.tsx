@@ -20,31 +20,31 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button 
-              variant="cta" 
+            <Button
+              variant="cta"
               size="xl"
-              asChild
-            >
-              <a 
-                href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              asChild>
+
+              <a
+                href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
+                target="_blank"
+                rel="noopener noreferrer">THAM GIA NHÓM VIP
+
                 <ExternalLink className="w-5 h-5" />
                 THAM GIA NHÓM ZALO
               </a>
             </Button>
             
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="xl"
-              asChild
-            >
-              <a 
-                href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              asChild>
+
+              <a
+                href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link"
+                target="_blank"
+                rel="noopener noreferrer">HUẤN LUYỆN AI MIỄN PHÍ
+
                 <Youtube className="w-5 h-5" />
                 Xem Seri Kiếm Tiền
               </a>
@@ -59,8 +59,8 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTASection;

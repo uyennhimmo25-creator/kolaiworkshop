@@ -9,7 +9,7 @@ const SpeakerSection = () => {
     toast({
       title: "💡 Lời nhắn nhủ",
       description: "Hành Trình này chỉ có những kẻ điên và đang xây dựng nên đế chế của riêng mình",
-      duration: 5000,
+      duration: 5000
     });
   };
 
@@ -26,15 +26,15 @@ const SpeakerSection = () => {
           <div className="bg-card-gradient bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border">
             <div className="flex flex-col md:flex-row items-center gap-8">
               {/* Avatar - Clickable to show message */}
-              <div 
+              <div
                 onClick={handleProfileClick}
-                className="relative group cursor-pointer"
-              >
-                <img 
-                  src={phongMenlyImage} 
-                  alt="Phong Menly - KOL AI" 
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-glow border-4 border-primary/20 transition-transform group-hover:scale-105"
-                />
+                className="relative group cursor-pointer">
+
+                <img
+
+                  alt="Phong Menly - KOL AI"
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-glow border-4 border-primary/20 transition-transform group-hover:scale-105" src="/lovable-uploads/c91329d1-bc43-4cff-a9d1-23228a136d8c.jpg" />
+
                 <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
                   KOL AI
                 </div>
@@ -69,8 +69,8 @@ const SpeakerSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default SpeakerSection;
