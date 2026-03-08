@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, MessageCircle, Gift, Users, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import qr100k from "@/assets/qr-100k.png";
-import qr50k from "@/assets/qr-50k.jpg";
+import qr68k from "@/assets/qr-68k.jpg";
 import qr150k from "@/assets/qr-150k.jpg";
 
 type TicketType = "free" | "member" | "group";
@@ -42,8 +42,8 @@ const DangKy = () => {
     member: {
       title: "Vé Member VIP",
       subtitle: "Dành cho thành viên có mã mời đặc biệt 🌟",
-      price: "50,000",
-      qr: qr50k,
+      price: "68,000",
+      qr: qr68k,
       color: "from-accent to-primary",
       benefits: [
         "Tất cả quyền lợi vé thường",
@@ -53,7 +53,7 @@ const DangKy = () => {
       ],
     },
     group: {
-      title: "Vé Đặc Biệt – Giới Thiệu Bạn Bè",
+      title: "🎟️ Vé Đặc Biệt – Giới Thiệu Bạn Bè",
       subtitle: "Bạn là người có sức ảnh hưởng và rất quan trọng 💎",
       price: "150,000",
       qr: qr150k,
@@ -68,6 +68,7 @@ const DangKy = () => {
   };
 
   const current = tickets[activeTicket];
+  const showMemberQR = activeTicket === "member" && isValidInviteCode(inviteCode);
 
   return (
     <main className="min-h-screen bg-hero-gradient">
@@ -138,7 +139,7 @@ const DangKy = () => {
           </button>
           <button
             onClick={() => setActiveTicket("group")}
-            className={`py-3 px-2 rounded-xl text-xs font-semibold transition-all border-2 ${
+            className={`py-3 px-2 rounded-xl text-xs font-semibold transition-all border-2 relative ${
               activeTicket === "group"
                 ? "border-primary bg-primary/10 text-primary"
                 : "border-border bg-card text-muted-foreground hover:border-primary/50"
@@ -149,6 +150,22 @@ const DangKy = () => {
           </button>
         </div>
 
+        {/* Group ticket highlight */}
+        {activeTicket === "group" && (
+          <div className="bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl border-2 border-accent p-5 mb-6">
+            <div className="flex items-center gap-2 mb-2">
+              <Users className="w-5 h-5 text-accent" />
+              <h3 className="font-bold text-foreground">Vé dành cho 3 người tham gia</h3>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Đăng ký <strong className="text-primary">1 vé cho cả 3 người</strong> – rủ thêm bạn bè, anh em cùng tham gia workshop với mức giá ưu đãi chỉ <strong className="text-primary">150,000 VNĐ</strong>. Tiết kiệm hơn khi đi cùng nhau!
+            </p>
+            <p className="text-sm text-foreground mt-3 font-medium">
+              💎 Bạn là người có sức ảnh hưởng và rất quan trọng đối với mọi người. Chào đón những người Anh Em cùng bạn tham gia!
+            </p>
+          </div>
+        )}
+
         {/* Invite Code */}
         {(activeTicket === "free" || activeTicket === "member") && (
           <div className="bg-card rounded-2xl border border-border p-5 mb-6 shadow-soft">
@@ -157,7 +174,7 @@ const DangKy = () => {
             </label>
             <input
               type="text"
-              placeholder="VD: KOL-123456"
+              placeholder=""
               value={inviteCode}
               onChange={(e) => handleInviteCodeChange(e.target.value.toUpperCase())}
               maxLength={10}
@@ -165,7 +182,7 @@ const DangKy = () => {
             />
             {inviteCode && isValidInviteCode(inviteCode) && (
               <p className="text-xs text-green-600 mt-2 font-medium">
-                ✅ Mã hợp lệ! Bạn được ưu đãi vé Member VIP – 50,000 VNĐ
+                ✅ Mã hợp lệ! Bạn được ưu đãi vé Member VIP – 68,000 VNĐ
               </p>
             )}
             {inviteCode && !isValidInviteCode(inviteCode) && inviteCode.length > 3 && (
@@ -203,32 +220,34 @@ const DangKy = () => {
               <p className="text-3xl font-extrabold text-primary">
                 {current.price} <span className="text-lg">VNĐ</span>
               </p>
+              {activeTicket === "group" && (
+                <p className="text-xs text-accent font-semibold mt-1">Dành cho 3 người tham gia</p>
+              )}
             </div>
 
             {/* QR */}
-            <div className="flex justify-center mb-4">
-              <img
-                src={current.qr}
-                alt={`QR thanh toán ${current.price} VNĐ`}
-                className="w-64 rounded-xl shadow-card"
-              />
-            </div>
-
-            <p className="text-center text-xs text-muted-foreground">
-              Quét mã QR để chuyển khoản • Techcombank • LE DANG PHUONG
-            </p>
+            {activeTicket === "member" && !showMemberQR ? (
+              <div className="text-center py-8 px-4 rounded-xl bg-muted/50 border border-dashed border-border mb-4">
+                <Sparkles className="w-8 h-8 text-muted-foreground mx-auto mb-3" />
+                <p className="text-sm font-semibold text-foreground mb-1">Nhập mã mời để hiển thị QR thanh toán</p>
+                <p className="text-xs text-muted-foreground">Vui lòng nhập mã mời hợp lệ ở phía trên để nhận ưu đãi Member VIP</p>
+              </div>
+            ) : (
+              <>
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={current.qr}
+                    alt={`QR thanh toán ${current.price} VNĐ`}
+                    className="w-64 rounded-xl shadow-card"
+                  />
+                </div>
+                <p className="text-center text-xs text-muted-foreground">
+                  Quét mã QR để chuyển khoản • Techcombank • LE DANG PHUONG
+                </p>
+              </>
+            )}
           </div>
         </div>
-
-        {/* Group invite message */}
-        {activeTicket === "group" && (
-          <div className="bg-accent/10 rounded-2xl border border-accent/30 p-5 mb-6 text-center">
-            <p className="text-sm text-foreground leading-relaxed">
-              💎 <strong>Bạn là người có sức ảnh hưởng</strong> và rất quan trọng đối với mọi người.
-              Chào đón những người Anh Em cùng bạn tham gia workshop lần này!
-            </p>
-          </div>
-        )}
 
         {/* Zalo Contact */}
         <div className="bg-card rounded-2xl border border-border p-6 shadow-soft text-center">
