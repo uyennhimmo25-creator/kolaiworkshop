@@ -177,7 +177,7 @@ const DangKy = () => {
               placeholder=""
               value={inviteCode}
               onChange={(e) => handleInviteCodeChange(e.target.value.toUpperCase())}
-              maxLength={10}
+              maxLength={12}
               className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-muted-foreground"
             />
             {inviteCode && isValidInviteCode(inviteCode) && (
