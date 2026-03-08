@@ -59,10 +59,8 @@ const HeroSection = () => {
             <a
               href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
               target="_blank"
-              rel="noopener noreferrer">ĐĂNG KÝ NGAY - NHẬN VÉ MIỄN PHÍ
-
-              
-              ĐĂNG KÝ NGAY - NHẬN VÉ MIỄN PHÍ
+              rel="noopener noreferrer">
+              <span>NHẬN VÉ MIỄN PHÍ</span>
             </a>
           </Button>
           
