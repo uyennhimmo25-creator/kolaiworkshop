@@ -13,15 +13,13 @@ const DangKy = () => {
   const [activeTicket, setActiveTicket] = useState<TicketType>("free");
 
   const isValidInviteCode = (code: string) => {
-    return /^KOL-\d{6}$/.test(code.trim().toUpperCase());
+    return /^KOL-\d{6,8}$/.test(code.trim().toUpperCase());
   };
 
   const handleInviteCodeChange = (value: string) => {
     setInviteCode(value);
     if (isValidInviteCode(value)) {
       setActiveTicket("member");
-    } else if (activeTicket === "member") {
-      setActiveTicket("free");
     }
   };
 
@@ -167,7 +165,7 @@ const DangKy = () => {
         )}
 
         {/* Invite Code */}
-        {(activeTicket === "free" || activeTicket === "member") && (
+        {activeTicket === "member" && (
           <div className="bg-card rounded-2xl border border-border p-5 mb-6 shadow-soft">
             <label className="text-sm font-semibold text-foreground mb-2 block">
               🎟️ Mã mời đặc biệt (nếu có)
@@ -177,7 +175,7 @@ const DangKy = () => {
               placeholder=""
               value={inviteCode}
               onChange={(e) => handleInviteCodeChange(e.target.value.toUpperCase())}
-              maxLength={10}
+              maxLength={12}
               className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-muted-foreground"
             />
             {inviteCode && isValidInviteCode(inviteCode) && (
