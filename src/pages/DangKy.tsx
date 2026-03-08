@@ -20,8 +20,6 @@ const DangKy = () => {
     setInviteCode(value);
     if (isValidInviteCode(value)) {
       setActiveTicket("member");
-    } else if (activeTicket === "member") {
-      setActiveTicket("free");
     }
   };
 
