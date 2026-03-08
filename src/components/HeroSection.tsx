@@ -56,11 +56,8 @@ const HeroSection = () => {
             className="group"
             asChild>
 
-            <a
-              href="https://www.notion.so/2c0fa4bf1f9c8054a627fe694f31d767"
-              target="_blank"
-              rel="noopener noreferrer">
-              <span>NHẬN VÉ  </span>
+            <a href="/dang-ky">
+              <span>NHẬN VÉ MIỄN PHÍ</span>
             </a>
           </Button>
           
