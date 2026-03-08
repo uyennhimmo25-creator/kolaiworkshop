@@ -167,7 +167,7 @@ const DangKy = () => {
         )}
 
         {/* Invite Code */}
-        {(activeTicket === "free" || activeTicket === "member") && (
+        {activeTicket === "member" && (
           <div className="bg-card rounded-2xl border border-border p-5 mb-6 shadow-soft">
             <label className="text-sm font-semibold text-foreground mb-2 block">
               🎟️ Mã mời đặc biệt (nếu có)
