@@ -13,7 +13,7 @@ const DangKy = () => {
   const [activeTicket, setActiveTicket] = useState<TicketType>("free");
 
   const isValidInviteCode = (code: string) => {
-    return /^KOL-\d{6}$/.test(code.trim().toUpperCase());
+    return /^KOL-\d{6,8}$/.test(code.trim().toUpperCase());
   };
 
   const handleInviteCodeChange = (value: string) => {
