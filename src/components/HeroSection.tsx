@@ -65,6 +65,8 @@ const HeroSection = () => {
           <p className="mt-4 text-sm text-muted-foreground">
             Tham gia nhóm Zalo để giữ chỗ và nhận quà độc quyền
           </p>
+
+          <CountdownTimer />
         </div>
       </div>
     </section>);
