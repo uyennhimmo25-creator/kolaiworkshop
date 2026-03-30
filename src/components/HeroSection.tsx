@@ -37,9 +37,10 @@ const HeroSection = () => {
         <div className="flex justify-center mb-10">
           <div className="relative animate-float">
             <img
-
               alt="Workshop KOL AI Make Money - Ý Tưởng Điên Rồ cùng Phong Menly"
-              className="relative w-full max-w-xl rounded-3xl shadow-card" src="/lovable-uploads/5cbf4d07-e98c-4541-b2c8-b78ac3db7cb7.jpg" />
+              className="relative w-full max-w-xl rounded-3xl shadow-card" 
+              src="/lovable-uploads/4528c671-67ca-4381-8573-10fed317f77c.jpg" 
+            />
 
           </div>
         </div>
