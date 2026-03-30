@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import workshopBanner from "@/assets/workshop-banner.png";
 import { Sparkles } from "lucide-react";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const HeroSection = () => {
   return (
