@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import workshopBanner from "@/assets/workshop-banner.png";
 import { Sparkles } from "lucide-react";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const HeroSection = () => {
   return (
@@ -65,6 +65,8 @@ const HeroSection = () => {
           <p className="mt-4 text-sm text-muted-foreground">
             Tham gia nhóm Zalo để giữ chỗ và nhận quà độc quyền
           </p>
+
+          <CountdownTimer />
         </div>
       </div>
     </section>);
