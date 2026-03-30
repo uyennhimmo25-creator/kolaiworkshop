@@ -39,7 +39,7 @@ const HeroSection = () => {
             <img
               alt="Workshop KOL AI Make Money - Ý Tưởng Điên Rồ cùng Phong Menly"
               className="relative w-full max-w-xl rounded-3xl shadow-card" 
-              src="/lovable-uploads/582b2cbe-986d-4366-b0b6-09453250bacc.jpg" 
+              src="/lovable-uploads/z7671960096226_7592acb9b3cbe7582d601720b553b6cc.jpg" 
             />
 
           </div>
