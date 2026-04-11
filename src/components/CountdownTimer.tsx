@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Clock, Users } from "lucide-react";
 
-const TARGET_DATE = new Date("2026-03-30T20:00:00+07:00").getTime();
+const today = new Date();
+const TARGET_DATE = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 20, 0, 0).getTime();
 const MAX_SLOTS = 30;
 
 const CountdownTimer = () => {
