@@ -24,7 +24,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-6">
             Workshop KOL AI
             <br />
-            <span className="text-foreground">Seedance 2.0</span>
+            <span className="text-foreground">AFFILIATE AI & AI AGENT</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
@@ -39,7 +39,7 @@ const HeroSection = () => {
             <img
               alt="Workshop KOL AI Make Money - Ý Tưởng Điên Rồ cùng Phong Menly"
               className="relative w-full max-w-xl rounded-3xl shadow-card" 
-              src="/lovable-uploads/z7671960096226_7592acb9b3cbe7582d601720b553b6cc.jpg" 
+              src="/lovable-uploads/workshop-kol-ai.png" 
             />
 
           </div>
