@@ -22,7 +22,7 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button variant="cta" size="xl" asChild>
               <a
-                href="https://luma.com/pvbntnaa?tk=p8vXlm"
+                href="https://whop.com/kolaigoglobal?a=phongtyphu"
                 target="_blank"
                 rel="noopener noreferrer"
               >
