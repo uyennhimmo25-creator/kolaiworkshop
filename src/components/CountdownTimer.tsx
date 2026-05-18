@@ -3,7 +3,7 @@ import { Clock, Users } from "lucide-react";
 
 // Workshop bắt đầu: 12:00 hôm nay
 const _today = new Date();
-const TARGET_DATE = new Date(_today.getFullYear(), _today.getMonth(), _today.getDate(), 12, 0, 0).getTime();
+const TARGET_DATE = new Date(_today.getFullYear(), _today.getMonth(), _today.getDate(), 20, 0, 0).getTime();
 const MAX_SLOTS = 30;
 
 const CountdownTimer = () => {
