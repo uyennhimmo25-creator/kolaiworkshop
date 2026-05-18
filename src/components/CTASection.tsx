@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Youtube } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -31,23 +31,6 @@ const CTASection = () => {
               </a>
             </Button>
             
-            <Button variant="outline" size="xl" asChild>
-              <a
-                href="https://www.notion.so/SERI-KI-M-TI-N-C-NG-KOL-AI-MONEY-2c0fa4bf1f9c80b4a83ec6c1c1153751?source=copy_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Xem Seri Kiếm Tiền</span>
-                <Youtube className="w-5 h-5" />
-              </a>
-            </Button>
-          </div>
-
-          <div className="bg-card rounded-2xl p-6 border border-border shadow-soft">
-            <p className="text-sm text-muted-foreground mb-2">🎁 Quà tặng đặc biệt</p>
-            <p className="text-foreground font-medium">Seri kiếm tiền với KOL AI - Xem ngay
-
-            </p>
           </div>
         </div>
       </div>
