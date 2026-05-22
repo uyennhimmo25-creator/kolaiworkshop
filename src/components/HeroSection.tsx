@@ -47,7 +47,7 @@ const HeroSection = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <p className="text-lg text-foreground mb-6 font-medium">
+          <p className="text-lg text-foreground font-sans mb-6 font-medium">
             👉 Bạn muốn đứng ngoài cuộc chơi AI hay muốn bắt đầu ngay hôm nay?
           </p>
           
