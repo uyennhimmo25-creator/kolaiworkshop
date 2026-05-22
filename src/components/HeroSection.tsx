@@ -29,7 +29,7 @@ const HeroSection = () => {
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Bạn đã bao giờ thấy người khác kiếm tiền từ AI và tự hỏi: 
-            <span className="font-semibold text-foreground"> "Tại sao không phải mình?"</span>
+            <span className="font-semibold text-foreground font-sans"> "Tại sao không phải mình?"</span>
           </p>
         </div>
 
