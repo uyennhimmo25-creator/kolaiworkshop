@@ -21,15 +21,15 @@ const HeroSection = () => {
 
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-primary leading-tight mb-6 font-sans lg:text-sm">
             BUILD AI TOOL CỦA RIÊNG MÌNH
             <br />
-            <span className="text-foreground">& KIẾM $ TỪ NÓ</span>
+            <span className="text-foreground font-sans">& KIẾM $ TỪ NÓ</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Bạn đã bao giờ thấy người khác kiếm tiền từ AI và tự hỏi: 
-            <span className="font-semibold text-foreground"> "Tại sao không phải mình?"</span>
+            <span className="font-semibold text-foreground font-sans"> "Tại sao không phải mình?"</span>
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const HeroSection = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <p className="text-lg text-foreground mb-6 font-medium">
+          <p className="text-lg text-foreground font-sans mb-6 font-medium">
             👉 Bạn muốn đứng ngoài cuộc chơi AI hay muốn bắt đầu ngay hôm nay?
           </p>
           
