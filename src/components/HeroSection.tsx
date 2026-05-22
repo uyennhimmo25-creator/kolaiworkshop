@@ -22,9 +22,9 @@ const HeroSection = () => {
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-6">
-            Xây AI Agent
+            BUILD AI TOOL CỦA RIÊNG MÌNH
             <br />
-            <span className="text-foreground">& Doanh nghiệp Một Người</span>
+            <span className="text-foreground">& KIẾM $ TỪ NÓ</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
