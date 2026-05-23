@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Clock, Users } from "lucide-react";
 
-// Workshop bắt đầu: 12:00 trưa mai
+// Đóng đăng ký: 20:00 tối nay 23/05
 const _today = new Date();
-const TARGET_DATE = new Date(_today.getFullYear(), _today.getMonth(), _today.getDate() + 1, 12, 0, 0).getTime();
+const TARGET_DATE = new Date(_today.getFullYear(), _today.getMonth(), _today.getDate(), 20, 0, 0).getTime();
 const MAX_SLOTS = 30;
 
 const CountdownTimer = () => {
