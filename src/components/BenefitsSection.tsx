@@ -1,4 +1,4 @@
-import { TrendingUp, MessageCircle, Gift, Video, FileText, Sparkles } from "lucide-react";
+import { TrendingUp, MessageCircle, Gift, Video, FileText, Sparkles, ArrowUpRight } from "lucide-react";
 
 const benefits = [
   {
@@ -43,8 +43,8 @@ const BenefitsSection = () => {
   return (
     <section className="py-12 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-4xl font-bold text-primary mb-3 md:mb-4">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-primary mb-3 md:mb-4">
             Bạn sẽ nhận được gì?
           </h2>
           <p className="text-sm md:text-base text-muted-foreground max-w-xl mx-auto">
@@ -52,50 +52,42 @@ const BenefitsSection = () => {
           </p>
         </div>
 
-        {/* Mobile: stacked list layout, Desktop: grid */}
-        <div className="max-w-5xl mx-auto">
-          {/* Mobile layout */}
-          <div className="flex flex-col gap-3 md:hidden">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-4 bg-card p-4 rounded-xl shadow-soft border border-border"
-              >
-                <div className="flex-shrink-0 w-11 h-11 bg-primary rounded-xl flex items-center justify-center">
-                  <benefit.icon className="w-5 h-5 text-primary-foreground" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-base font-bold text-foreground mb-0.5">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </div>
-                <span className="text-xs font-bold text-primary/40 mt-0.5">{benefit.number}</span>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-4xl mx-auto flex flex-col gap-4 md:gap-5">
+          {benefits.map((benefit, index) => (
+            <div
+              key={index}
+              className="group relative flex items-center gap-4 md:gap-6 bg-card border border-primary/20 rounded-2xl p-4 md:p-6 shadow-soft hover:shadow-glow hover:-translate-y-0.5 hover:border-primary/60 transition-all duration-300 overflow-hidden animate-fade-in"
+              style={{ animationDelay: `${index * 80}ms` }}
+            >
+              {/* Decorative gradient stripe */}
+              <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-primary to-accent" />
 
-          {/* Desktop layout */}
-          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="group bg-card-gradient bg-card p-6 rounded-2xl shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-1 border border-border"
-              >
-                <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <benefit.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
+              {/* Number */}
+              <div className="flex-shrink-0 w-14 md:w-20 text-center">
+                <span className="text-4xl md:text-6xl font-black bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent leading-none tracking-tight">
+                  {benefit.number}
+                </span>
+              </div>
+
+              {/* Icon */}
+              <div className="hidden sm:flex flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-primary/10 border border-primary/30 rounded-xl items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors">
+                <benefit.icon className="w-5 h-5 md:w-6 md:h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+              </div>
+
+              {/* Content */}
+              <div className="flex-1 min-w-0">
+                <h3 className="text-base md:text-xl font-bold text-foreground mb-1">
                   {benefit.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
-            ))}
-          </div>
+
+              {/* Arrow */}
+              <ArrowUpRight className="hidden md:block flex-shrink-0 w-5 h-5 text-primary/40 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
