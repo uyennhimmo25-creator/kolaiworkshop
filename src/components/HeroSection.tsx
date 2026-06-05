@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
+import heroCover from "@/assets/hero-cover-16x9.png.asset.json";
 
 const HeroSection = () => {
   return (
@@ -39,25 +40,17 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Hero image with gold frame */}
+        {/* Hero 16:9 cover */}
         <div className="flex justify-center mb-10">
-          <div className="relative group">
+          <div className="relative group w-full max-w-5xl">
             {/* glow ring */}
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="Phong Menly - KOL AI Business"
-                className="w-full max-w-md md:max-w-lg aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
-                src="/lovable-uploads/avatar-main.png"
+                alt="Hành trình 0 - 100K Follow - Phong Menly KOL AI"
+                className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                src={heroCover.url}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-primary font-semibold tracking-widest uppercase">Phong Menly</p>
-                  <p className="text-sm text-foreground font-bold">KOL AI · Business</p>
-                </div>
-                <Sparkles className="w-5 h-5 text-primary animate-pulse" />
-              </div>
             </div>
           </div>
         </div>
