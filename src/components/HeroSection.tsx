@@ -48,7 +48,7 @@ const HeroSection = () => {
               <img
                 alt="Phong Menly - KOL AI Business"
                 className="w-full max-w-md md:max-w-lg aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
-                src="/lovable-uploads/workshop-kol-ai.png"
+                src="/lovable-uploads/avatar-main.png"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
