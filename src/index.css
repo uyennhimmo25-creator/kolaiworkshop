@@ -6,49 +6,47 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --background: 0 0% 4%;
+    --foreground: 40 30% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card: 0 0% 7%;
+    --card-foreground: 40 30% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 40 30% 96%;
 
-    /* Orange - Primary brand color */
-    --primary: 24 95% 53%;
-    --primary-foreground: 0 0% 100%;
+    /* Gold - Primary brand color */
+    --primary: 42 90% 55%;
+    --primary-foreground: 0 0% 5%;
 
-    /* Pink - Secondary brand color */
-    --secondary: 340 82% 95%;
-    --secondary-foreground: 340 60% 45%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 42 90% 65%;
 
-    --muted: 340 30% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 40 10% 70%;
 
-    /* Accent pink */
-    --accent: 340 75% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 95% 62%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 340 30% 90%;
-    --input: 340 30% 90%;
-    --ring: 24 95% 53%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 42 90% 55%;
 
     --radius: 0.75rem;
 
     /* Custom colors */
-    --orange-glow: 24 100% 60%;
-    --pink-soft: 340 82% 95%;
-    --pink-medium: 340 75% 85%;
-    --pink-accent: 340 75% 55%;
+    --orange-glow: 42 100% 65%;
+    --pink-soft: 0 0% 10%;
+    --pink-medium: 42 50% 35%;
+    --pink-accent: 42 95% 62%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(340, 82%, 97%) 0%, hsl(0, 0%, 100%) 50%, hsl(340, 82%, 95%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(24, 95%, 53%) 0%, hsl(340, 75%, 55%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(340, 82%, 98%) 100%);
+    --gradient-hero: radial-gradient(ellipse at top, hsl(42, 60%, 12%) 0%, hsl(0, 0%, 4%) 60%, hsl(0, 0%, 2%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(42, 95%, 55%) 0%, hsl(36, 95%, 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 5%) 100%);
   }
 
   .dark {
