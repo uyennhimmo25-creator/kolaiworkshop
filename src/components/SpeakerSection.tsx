@@ -31,9 +31,10 @@ const SpeakerSection = () => {
                 className="relative group cursor-pointer">
 
                 <img
-
                   alt="Phong Menly - KOL AI"
-                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-glow border-4 border-primary/20 transition-transform group-hover:scale-105" src="/lovable-uploads/c91329d1-bc43-4cff-a9d1-23228a136d8c.jpg" />
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-glow border-4 border-primary/20 transition-transform group-hover:scale-105"
+                  src="/lovable-uploads/avatar-main.png"
+                />
 
                 <div className="absolute -bottom-2 -right-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
                   KOL AI
