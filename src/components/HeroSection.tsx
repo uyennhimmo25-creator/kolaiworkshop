@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import heroCover from "@/assets/hero-cover-16x9.png.asset.json";
 
@@ -24,19 +23,11 @@ const HeroSection = () => {
 
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
-          <div className="flex items-center justify-center gap-3 md:gap-5 mb-3">
-            <span className="text-4xl md:text-6xl font-black text-primary tracking-tight">0</span>
-            <ArrowRight className="w-7 h-7 md:w-10 md:h-10 text-primary/70" />
-            <span className="text-4xl md:text-6xl font-black text-primary tracking-tight">100K</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black text-foreground leading-[1.05] tracking-tight mb-5">
-            HÀNH TRÌNH <span className="text-primary">FOLLOW</span>
+          <h1 className="text-4xl md:text-6xl font-black text-foreground leading-[1.05] tracking-tight mb-3">
+            TRÁNG <span className="text-primary">BÁN HÀNG</span>
           </h1>
-
-          <p className="text-base md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
-            Facebook <span className="text-foreground font-bold">85K</span> · TikTok{" "}
-            <span className="text-foreground font-bold">50K</span> · YouTube{" "}
-            <span className="text-foreground font-bold">20K</span>
+          <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
+            Huyết mạch Business Online
           </p>
         </div>
 
@@ -47,7 +38,7 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="Hành trình 0 - 100K Follow - Phong Menly KOL AI"
+                alt="Tráng Bán Hàng - Huyết mạch Business Online"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 src={heroCover.url}
               />
