@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const VideoTestimonial = () => {
   return (
     <section className="py-12 md:py-16 bg-background">
@@ -10,7 +12,7 @@ const VideoTestimonial = () => {
             Video chia sẻ thực tế giúp bạn hiểu rõ hơn về hành trình KOL AI
           </p>
 
-          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-card border border-border">
+          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-card border border-border mb-8">
             <iframe
               src="https://www.youtube.com/embed/K2H9p7IGhdo?autoplay=1&mute=1&loop=1&playlist=K2H9p7IGhdo&controls=1&rel=0&modestbranding=1&playsinline=1&vq=hd1080"
               title="Phong Menly - KOL AI"
@@ -19,6 +21,12 @@ const VideoTestimonial = () => {
               className="absolute inset-0 w-full h-full"
             />
           </div>
+
+          <Button variant="cta" size="xl" className="group shadow-glow" asChild>
+            <a href="/dang-ky">
+              <span>ĐĂNG KÝ NGAY</span>
+            </a>
+          </Button>
         </div>
       </div>
     </section>
