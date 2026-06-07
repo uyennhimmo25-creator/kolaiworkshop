@@ -3,8 +3,8 @@ import { TrendingUp, MessageCircle, Gift, Video, FileText, Sparkles, ArrowUpRigh
 const benefits = [
   {
     icon: TrendingUp,
-    title: "Xu hướng AI & KOL AI",
-    description: "Cập nhật xu hướng AI & KOL AI mới nhất, không bỏ lỡ cơ hội",
+    title: "100 mẫu trang web bán hàng chuyển đổi cao",
+    description: "Bộ sưu tập 100 mẫu landing page bán hàng tối ưu chuyển đổi, sẵn sàng triển khai",
     number: "01",
   },
   {
