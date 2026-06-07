@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import communityImg from "@/assets/community-affiliate-ai.jpg.asset.json";
 
 const CTASection = () => {
   return (
@@ -9,33 +8,29 @@ const CTASection = () => {
       <div className="absolute bottom-10 left-20 w-32 h-32 bg-accent/20 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Sẵn sàng bắt đầu hành trình AI của bạn?
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-primary mb-6">
+            Nơi bạn tìm thấy cho mình một cộng đồng
           </h2>
-          
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Ấn đăng ký để nhận quà và giữ chỗ ngay. 
-            Cơ hội không chờ đợi ai cả!
+
+          <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto">
+            Cùng hàng trăm KOL, Affiliate và nhà sáng tạo đang xây dựng đế chế AI của riêng mình.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button variant="cta" size="xl" asChild>
-              <a
-                href="https://whop.com/kolaigoglobal?a=phongtyphu"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>NHẬN BẢN TIN KIẾM TIỀN KOL AI 2026</span>
-                <ExternalLink className="w-5 h-5" />
-              </a>
-            </Button>
-            
+          <div className="relative group w-full">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500" />
+            <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
+              <img
+                src={communityImg.url}
+                alt="Cộng đồng Affiliate x AI - BlueOcean"
+                className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default CTASection;
