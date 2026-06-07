@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import heroCover from "@/assets/hero-cover-16x9.png.asset.json";
 
@@ -39,7 +38,7 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="Hành trình 0 - 100K Follow - Phong Menly KOL AI"
+                alt="Tráng Bán Hàng - Huyết mạch Business Online"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 src={heroCover.url}
               />
