@@ -32,6 +32,16 @@ const HeroSection = () => {
           </p>
         </div>
 
+        {/* Date & Time */}
+        <div className="flex justify-center mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-3 px-6 py-2.5 bg-accent/10 backdrop-blur rounded-full border border-accent/30 shadow-sm">
+            <Calendar className="w-5 h-5 text-accent" />
+            <span className="text-base md:text-lg font-bold text-foreground tracking-wide">
+              20:00 – Thứ Bảy, ngày 8 tháng 6
+            </span>
+          </div>
+        </div>
+
         {/* Hero 16:9 cover */}
         <div className="flex justify-center mb-10">
           <div className="relative group w-full max-w-5xl">
