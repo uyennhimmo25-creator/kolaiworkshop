@@ -31,7 +31,7 @@ const DangKy = () => {
       qr: qr199k.url,
       color: "from-primary via-accent to-primary",
       benefits: [
-        "Tất cả quyền lợi vé thường",
+        "Tất cả quyền lợi vé VIP",
         "Mời thêm bạn bè cùng tham gia",
         "Nhận mã giới thiệu riêng",
         "Chào đón những Anh Em cùng bạn tham gia",
@@ -95,7 +95,7 @@ const DangKy = () => {
             }`}
           >
             <Gift className="w-4 h-4 mx-auto mb-1" />
-            Vé Thường
+            Vé VIP
           </button>
           <button
             onClick={() => setActiveTicket("group")}
