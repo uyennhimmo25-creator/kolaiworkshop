@@ -1,27 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle2, MessageCircle, Gift, Users, Sparkles } from "lucide-react";
+import { ArrowLeft, CheckCircle2, MessageCircle, Gift, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import qr100k from "@/assets/qr-100k.png";
-import qr68k from "@/assets/qr-68k.jpg";
-import qr150k from "@/assets/qr-150k.jpg";
+import qr199k from "@/assets/qr-199k.jpg.asset.json";
 
-type TicketType = "free" | "member" | "group";
+type TicketType = "free" | "group";
 
 const DangKy = () => {
-  const [inviteCode, setInviteCode] = useState("");
   const [activeTicket, setActiveTicket] = useState<TicketType>("free");
-
-  const isValidInviteCode = (code: string) => {
-    return /^KOL-\d{6,8}$/.test(code.trim().toUpperCase());
-  };
-
-  const handleInviteCodeChange = (value: string) => {
-    setInviteCode(value);
-    if (isValidInviteCode(value)) {
-      setActiveTicket("member");
-    }
-  };
 
   const tickets = {
     free: {
@@ -37,27 +24,14 @@ const DangKy = () => {
         "Replay Zoom trong 7 ngày",
       ],
     },
-    member: {
-      title: "Vé Member VIP",
-      subtitle: "Dành cho thành viên có mã mời đặc biệt 🌟",
-      price: "68,000",
-      qr: qr68k,
-      color: "from-accent to-primary",
-      benefits: [
-        "Tất cả quyền lợi vé thường",
-        "Ưu đãi đặc biệt cho thành viên VIP",
-        "Quà tặng bất ngờ từ diễn giả",
-        "Ưu tiên hỏi đáp trong workshop",
-      ],
-    },
     group: {
       title: "🎟️ Vé Đặc Biệt – Giới Thiệu Bạn Bè",
       subtitle: "Bạn là người có sức ảnh hưởng và rất quan trọng 💎",
-      price: "150,000",
-      qr: qr150k,
+      price: "199,000",
+      qr: qr199k.url,
       color: "from-primary via-accent to-primary",
       benefits: [
-        "Tất cả quyền lợi vé VIP",
+        "Tất cả quyền lợi vé thường",
         "Mời thêm bạn bè cùng tham gia",
         "Nhận mã giới thiệu riêng",
         "Chào đón những Anh Em cùng bạn tham gia",
@@ -66,7 +40,6 @@ const DangKy = () => {
   };
 
   const current = tickets[activeTicket];
-  const showMemberQR = activeTicket === "member" && isValidInviteCode(inviteCode);
 
   return (
     <main className="min-h-screen bg-hero-gradient">
@@ -112,9 +85,9 @@ const DangKy = () => {
         </div>
 
         {/* Ticket Selection */}
-        <div className="grid grid-cols-3 gap-2 mb-6">
+        <div className="grid grid-cols-2 gap-2 mb-6">
           <button
-            onClick={() => { setActiveTicket("free"); setInviteCode(""); }}
+            onClick={() => setActiveTicket("free")}
             className={`py-3 px-2 rounded-xl text-xs font-semibold transition-all border-2 ${
               activeTicket === "free"
                 ? "border-primary bg-primary/10 text-primary"
@@ -123,17 +96,6 @@ const DangKy = () => {
           >
             <Gift className="w-4 h-4 mx-auto mb-1" />
             Vé Thường
-          </button>
-          <button
-            onClick={() => setActiveTicket("member")}
-            className={`py-3 px-2 rounded-xl text-xs font-semibold transition-all border-2 ${
-              activeTicket === "member"
-                ? "border-accent bg-accent/10 text-accent"
-                : "border-border bg-card text-muted-foreground hover:border-accent/50"
-            }`}
-          >
-            <Sparkles className="w-4 h-4 mx-auto mb-1" />
-            Member VIP
           </button>
           <button
             onClick={() => setActiveTicket("group")}
@@ -156,38 +118,11 @@ const DangKy = () => {
               <h3 className="font-bold text-foreground">Vé dành cho 3 người tham gia</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Đăng ký <strong className="text-primary">1 vé cho cả 3 người</strong> – rủ thêm bạn bè, anh em cùng tham gia workshop với mức giá ưu đãi chỉ <strong className="text-primary">150,000 VNĐ</strong>. Tiết kiệm hơn khi đi cùng nhau!
+              Đăng ký <strong className="text-primary">1 vé cho cả 3 người</strong> – rủ thêm bạn bè, anh em cùng tham gia workshop với mức giá ưu đãi chỉ <strong className="text-primary">199,000 VNĐ</strong>. Tiết kiệm hơn khi đi cùng nhau!
             </p>
             <p className="text-sm text-foreground mt-3 font-medium">
               💎 Bạn là người có sức ảnh hưởng và rất quan trọng đối với mọi người. Chào đón những người Anh Em cùng bạn tham gia!
             </p>
-          </div>
-        )}
-
-        {/* Invite Code */}
-        {activeTicket === "member" && (
-          <div className="bg-card rounded-2xl border border-border p-5 mb-6 shadow-soft">
-            <label className="text-sm font-semibold text-foreground mb-2 block">
-              🎟️ Mã mời đặc biệt (nếu có)
-            </label>
-            <input
-              type="text"
-              placeholder=""
-              value={inviteCode}
-              onChange={(e) => handleInviteCodeChange(e.target.value.toUpperCase())}
-              maxLength={12}
-              className="w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 placeholder:text-muted-foreground"
-            />
-            {inviteCode && isValidInviteCode(inviteCode) && (
-              <p className="text-xs text-green-600 mt-2 font-medium">
-                ✅ Mã hợp lệ! Bạn được ưu đãi vé Member VIP – 68,000 VNĐ
-              </p>
-            )}
-            {inviteCode && !isValidInviteCode(inviteCode) && inviteCode.length > 3 && (
-              <p className="text-xs text-muted-foreground mt-2">
-                Mã mời có dạng: KOL-XXXXXX (6 chữ số)
-              </p>
-            )}
           </div>
         )}
 
@@ -224,26 +159,16 @@ const DangKy = () => {
             </div>
 
             {/* QR */}
-            {activeTicket === "member" && !showMemberQR ? (
-              <div className="text-center py-8 px-4 rounded-xl bg-muted/50 border border-dashed border-border mb-4">
-                <Sparkles className="w-8 h-8 text-muted-foreground mx-auto mb-3" />
-                <p className="text-sm font-semibold text-foreground mb-1">Nhập mã mời để hiển thị QR thanh toán</p>
-                <p className="text-xs text-muted-foreground">Vui lòng nhập mã mời hợp lệ ở phía trên để nhận ưu đãi Member VIP</p>
-              </div>
-            ) : (
-              <>
-                <div className="flex justify-center mb-4">
-                  <img
-                    src={current.qr}
-                    alt={`QR thanh toán ${current.price} VNĐ`}
-                    className="w-64 rounded-xl shadow-card"
-                  />
-                </div>
-                <p className="text-center text-xs text-muted-foreground">
-                  Quét mã QR để chuyển khoản • Techcombank • LE DANG PHUONG
-                </p>
-              </>
-            )}
+            <div className="flex justify-center mb-4">
+              <img
+                src={current.qr}
+                alt={`QR thanh toán ${current.price} VNĐ`}
+                className="w-64 rounded-xl shadow-card"
+              />
+            </div>
+            <p className="text-center text-xs text-muted-foreground">
+              Quét mã QR để chuyển khoản • Techcombank • LE DANG PHUONG
+            </p>
           </div>
         </div>
 
