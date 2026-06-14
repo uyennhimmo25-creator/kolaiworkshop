@@ -28,7 +28,7 @@ const DangKy = () => {
       title: "🎟️ Vé Đặc Biệt – Giới Thiệu Bạn Bè",
       subtitle: "Bạn là người có sức ảnh hưởng và rất quan trọng 💎",
       price: "199,000",
-      qr: qr199k.url,
+      qr: qr199k,
       color: "from-primary via-accent to-primary",
       benefits: [
         "Tất cả quyền lợi vé VIP",

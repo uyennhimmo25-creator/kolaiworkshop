@@ -21,7 +21,7 @@ const CTASection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                src={communityImg.url}
+                src={communityImg}
                 alt="Cộng đồng Affiliate x AI - BlueOcean"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
               />
