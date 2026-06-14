@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, MessageCircle, Gift, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import qr100k from "@/assets/qr-100k.png";
-import qr199k from "@/assets/qr-199k.jpg.asset.json";
+import qr199k from "@/assets/qr-199k.jpg";
 
 type TicketType = "free" | "group";
 
@@ -28,7 +28,7 @@ const DangKy = () => {
       title: "🎟️ Vé Đặc Biệt – Giới Thiệu Bạn Bè",
       subtitle: "Bạn là người có sức ảnh hưởng và rất quan trọng 💎",
       price: "199,000",
-      qr: qr199k.url,
+      qr: qr199k,
       color: "from-primary via-accent to-primary",
       benefits: [
         "Tất cả quyền lợi vé VIP",

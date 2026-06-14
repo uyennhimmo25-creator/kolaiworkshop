@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import heroCover from "@/assets/hero-cover-16x9.png.asset.json";
+import heroCover from "@/assets/hero-cover-16x9.png";
 import { Calendar } from "lucide-react";
 
 const HeroSection = () => {
@@ -51,7 +51,7 @@ const HeroSection = () => {
               <img
                 alt="Trang Bán Hàng - Huyết mạch Business Online"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                src={heroCover.url}
+                src={heroCover}
               />
             </div>
           </div>
