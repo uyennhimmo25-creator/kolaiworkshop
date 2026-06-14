@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import heroCover from "@/assets/hero-cover-16x9.png.asset.json";
+import heroCover from "@/assets/hero-cover-16x9.png";
 import { Calendar } from "lucide-react";
 
 const HeroSection = () => {

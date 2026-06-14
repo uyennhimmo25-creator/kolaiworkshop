@@ -1,4 +1,4 @@
-import communityImg from "@/assets/community-affiliate-ai.jpg.asset.json";
+import communityImg from "@/assets/community-affiliate-ai.jpg";
 
 const CTASection = () => {
   return (

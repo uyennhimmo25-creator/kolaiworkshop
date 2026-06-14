@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, MessageCircle, Gift, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import qr100k from "@/assets/qr-100k.png";
-import qr199k from "@/assets/qr-199k.jpg.asset.json";
+import qr199k from "@/assets/qr-199k.jpg";
 
 type TicketType = "free" | "group";
 
