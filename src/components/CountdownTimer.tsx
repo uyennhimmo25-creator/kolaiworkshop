@@ -21,7 +21,7 @@ const CountdownTimer = () => {
 
   function getTimeLeft() {
     const now = Date.now();
-    const diff = TARGET_DATE - now;
+    const diff = getNextMonday2000() - now;
     if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true };
     return {
       days: Math.floor(diff / (1000 * 60 * 60 * 24)),
