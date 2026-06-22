@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2.5 bg-accent/10 backdrop-blur rounded-full border border-accent/30 shadow-sm">
             <Calendar className="w-5 h-5 text-accent" />
             <span className="text-base md:text-lg font-bold text-foreground tracking-wide">
-              20:00 – Thứ Hai hàng tuần: Thành duy nhất hôm nay
+              20:00 Thứ 2 ngày 22/6
             </span>
           </div>
         </div>
