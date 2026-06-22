@@ -1,19 +1,8 @@
 import { useState, useEffect } from "react";
 import { Clock, Users } from "lucide-react";
 
-// Workshop diễn ra: 20:00 Thứ Hai hàng tuần
-function getNextMonday2000() {
-  const now = new Date();
-  const target = new Date(now);
-  target.setHours(20, 0, 0, 0);
-  const day = target.getDay(); // 0=CN, 1=T2
-  let daysUntilMonday = (1 - day + 7) % 7;
-  if (daysUntilMonday === 0 && target.getTime() <= now.getTime()) {
-    daysUntilMonday = 7;
-  }
-  target.setDate(target.getDate() + daysUntilMonday);
-  return target.getTime();
-}
+// Workshop diễn ra: 20:00 Thứ 2 ngày 22/6/2026
+const WORKSHOP_TARGET_MS = new Date(2026, 5, 22, 20, 0, 0).getTime(); // June 22, 2026 20:00
 const MAX_SLOTS = 39;
 
 const CountdownTimer = () => {
