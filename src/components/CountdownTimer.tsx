@@ -1,24 +1,27 @@
 import { useState, useEffect } from "react";
 import { Clock, Users } from "lucide-react";
 
-// Workshop diễn ra: 20:00 ngày 8/6 hàng năm
-const now = new Date();
-const currentYear = now.getFullYear();
-let targetYear = currentYear;
-let targetDate = new Date(targetYear, 5, 8, 20, 0, 0); // Tháng 6 (0-indexed = 5)
-if (targetDate.getTime() < now.getTime()) {
-  targetYear = currentYear + 1;
-  targetDate = new Date(targetYear, 5, 8, 20, 0, 0);
+// Workshop diễn ra: 20:00 Thứ Hai hàng tuần
+function getNextMonday2000() {
+  const now = new Date();
+  const target = new Date(now);
+  target.setHours(20, 0, 0, 0);
+  const day = target.getDay(); // 0=CN, 1=T2
+  let daysUntilMonday = (1 - day + 7) % 7;
+  if (daysUntilMonday === 0 && target.getTime() <= now.getTime()) {
+    daysUntilMonday = 7;
+  }
+  target.setDate(target.getDate() + daysUntilMonday);
+  return target.getTime();
 }
-const TARGET_DATE = targetDate.getTime();
-const MAX_SLOTS = 50;
+const MAX_SLOTS = 39;
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft());
 
   function getTimeLeft() {
     const now = Date.now();
-    const diff = TARGET_DATE - now;
+    const diff = getNextMonday2000() - now;
     if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0, expired: true };
     return {
       days: Math.floor(diff / (1000 * 60 * 60 * 24)),

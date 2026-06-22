@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 40 30% 96%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 7%;
-    --card-foreground: 40 30% 96%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 40 30% 96%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
 
-    /* Gold - Primary brand color */
-    --primary: 42 90% 55%;
-    --primary-foreground: 0 0% 5%;
+    /* Bright orange - Primary brand color */
+    --primary: 20 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 42 90% 65%;
+    --secondary: 30 100% 96%;
+    --secondary-foreground: 20 90% 35%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 40 10% 70%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 30%;
 
-    --accent: 42 95% 62%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 16 100% 52%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84.2% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 42 90% 55%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 20 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom colors */
-    --orange-glow: 42 100% 65%;
-    --pink-soft: 0 0% 10%;
-    --pink-medium: 42 50% 35%;
-    --pink-accent: 42 95% 62%;
+    --orange-glow: 22 100% 60%;
+    --pink-soft: 30 100% 97%;
+    --pink-medium: 22 90% 45%;
+    --pink-accent: 16 100% 52%;
 
     /* Gradients */
-    --gradient-hero: radial-gradient(ellipse at top, hsl(42, 60%, 12%) 0%, hsl(0, 0%, 4%) 60%, hsl(0, 0%, 2%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(42, 95%, 55%) 0%, hsl(36, 95%, 50%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 5%) 100%);
+    --gradient-hero: radial-gradient(ellipse at top, hsl(30, 100%, 96%) 0%, hsl(0, 0%, 100%) 60%, hsl(0, 0%, 100%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(20, 100%, 50%) 0%, hsl(14, 100%, 48%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(30, 100%, 98%) 100%);
   }
 
   .dark {
