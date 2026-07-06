@@ -49,9 +49,9 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="Trang Bán Hàng - Huyết mạch Business Online"
+                alt="AGENT TỰ ĐỘNG KÉO KHÁCH"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                src={heroCover}
+                src={heroCover.url}
               />
             </div>
           </div>
