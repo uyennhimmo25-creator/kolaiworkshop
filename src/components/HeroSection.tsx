@@ -24,7 +24,7 @@ const HeroSection = () => {
 
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
-          <h1 className="text-4xl md:text-6xl font-black text-foreground leading-[1.05] tracking-tight mb-3">
+          <h1 className="text-[clamp(1.5rem,6vw,3.75rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
             AGENT <span className="text-primary">TỰ ĐỘNG KÉO KHÁCH</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
