@@ -25,7 +25,7 @@ const HeroSection = () => {
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
           <h1 className="text-4xl md:text-6xl font-black text-foreground leading-[1.05] tracking-tight mb-3">
-            AI AGENT <span className="text-primary">TẠO SẢN PHẨM</span>
+            AGENT <span className="text-primary">TỰ ĐỘNG KÉO KHÁCH</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
             Huyết mạch Business Online
