@@ -24,8 +24,8 @@ const HeroSection = () => {
 
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
-          <h1 className="text-[clamp(1.5rem,6vw,3.75rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
-            AGENT <span className="text-primary">TỰ ĐỘNG KÉO KHÁCH</span>
+          <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
+            EDIT VIDEO <span className="text-primary">TỰ ĐỘNG THEO Ý BẠN</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
             Huyết mạch Business Online
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2.5 bg-accent/10 backdrop-blur rounded-full border border-accent/30 shadow-sm">
             <Calendar className="w-5 h-5 text-accent" />
             <span className="text-base md:text-lg font-bold text-foreground tracking-wide">
-              20:00 ngày 6/7
+              20:00 ngày 13/7
             </span>
           </div>
         </div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="AGENT TỰ ĐỘNG KÉO KHÁCH"
+                alt="EDIT VIDEO TỰ ĐỘNG THEO Ý BẠN"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 src={heroCover.url}
               />

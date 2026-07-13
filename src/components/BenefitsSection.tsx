@@ -1,22 +1,22 @@
-import { TrendingUp, MessageCircle, Gift, Video, FileText, Sparkles, ArrowUpRight } from "lucide-react";
+import { Wand2, Smartphone, Workflow, Gift, Video, FileText, Sparkles, ArrowUpRight } from "lucide-react";
 
 const benefits = [
   {
-    icon: TrendingUp,
-    title: "100 mẫu trang web bán hàng chuyển đổi cao",
-    description: "Bộ sưu tập 100 mẫu landing page bán hàng tối ưu chuyển đổi, sẵn sàng triển khai",
+    icon: Wand2,
+    title: "Skill edit video cài sẵn",
+    description: "Có ngay bộ kỹ năng edit video bằng AI, áp dụng được từ ngày đầu tiên",
     number: "01",
   },
   {
-    icon: MessageCircle,
-    title: "Hỏi đáp trực tiếp",
-    description: "Được hỏi đáp trực tiếp cùng Phong Menly – KOL AI & Vibe Coding",
+    icon: Smartphone,
+    title: "Build được APP edit tự động cho bản thân",
+    description: "Tự tay xây dựng công cụ edit video tự động theo đúng nhu cầu của bạn",
     number: "02",
   },
   {
-    icon: Video,
-    title: "Video Zoom",
-    description: "Nhận trọn bộ video Zoom replay để xem lại bất cứ lúc nào",
+    icon: Workflow,
+    title: "Nhận workflow từ edit tới đăng tự động không mất phí",
+    description: "Quy trình hoàn chỉnh từ chỉnh sửa, render đến đăng tải tự động trên các nền tảng",
     number: "03",
   },
   {
