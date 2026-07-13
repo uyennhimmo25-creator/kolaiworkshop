@@ -1,5 +1,3 @@
-import communityImg from "@/assets/community-affiliate-ai.jpg";
-
 const CTASection = () => {
   return (
     <section className="py-16 md:py-24 bg-hero-gradient relative overflow-hidden">
@@ -17,21 +15,18 @@ const CTASection = () => {
             Cùng hàng trăm KOL, Affiliate và nhà sáng tạo đang xây dựng đế chế AI của riêng mình.
           </p>
 
-          <a
-            href="https://youtu.be/olUne4Ql5Ns?si=ZwGL0kuu0xC3xMD8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block relative group w-full cursor-pointer"
-          >
+          <div className="relative group w-full">
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500" />
-            <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
-              <img
-                src={communityImg}
-                alt="Cộng đồng Affiliate x AI - BlueOcean"
-                className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+            <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow aspect-video">
+              <iframe
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/olUne4Ql5Ns"
+                title="Cộng đồng Affiliate x AI - BlueOcean"
               />
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
