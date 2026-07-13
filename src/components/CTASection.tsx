@@ -17,7 +17,12 @@ const CTASection = () => {
             Cùng hàng trăm KOL, Affiliate và nhà sáng tạo đang xây dựng đế chế AI của riêng mình.
           </p>
 
-          <div className="relative group w-full">
+          <a
+            href="https://youtu.be/olUne4Ql5Ns?si=ZwGL0kuu0xC3xMD8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block relative group w-full cursor-pointer"
+          >
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
@@ -26,7 +31,7 @@ const CTASection = () => {
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
               />
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
