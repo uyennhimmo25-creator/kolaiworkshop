@@ -1,4 +1,4 @@
-import { Wand2, Smartphone, Workflow, Gift, Video, FileText, Sparkles, ArrowUpRight } from "lucide-react";
+import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "lucide-react";
 
 const benefits = [
   {
