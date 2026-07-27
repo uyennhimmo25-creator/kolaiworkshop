@@ -1,28 +1,28 @@
-import { Wand2, Smartphone, Workflow, Gift, Video, FileText, Sparkles, ArrowUpRight } from "lucide-react";
+import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "lucide-react";
 
 const benefits = [
   {
-    icon: Wand2,
-    title: "Skill edit video cài sẵn",
-    description: "Có ngay bộ kỹ năng edit video bằng AI, áp dụng được từ ngày đầu tiên",
+    icon: Image,
+    title: "Skill tạo ảnh thương hiệu cá nhân",
+    description: "Có ngay bộ kỹ năng tạo hình ảnh thương hiệu cá nhân bằng AI, sẵn sàng dùng ngay",
     number: "01",
   },
   {
-    icon: Smartphone,
-    title: "Build được APP edit tự động cho bản thân",
-    description: "Tự tay xây dựng công cụ edit video tự động theo đúng nhu cầu của bạn",
+    icon: DollarSign,
+    title: "Affiliate marketing skill",
+    description: "Học cách kiếm tiền tự động qua hệ thống affiliate với AI hỗ trợ 24/7",
     number: "02",
   },
   {
-    icon: Workflow,
-    title: "Nhận workflow từ edit tới đăng tự động không mất phí",
-    description: "Quy trình hoàn chỉnh từ chỉnh sửa, render đến đăng tải tự động trên các nền tảng",
+    icon: Wrench,
+    title: "Hướng dẫn tự cài skill theo ngành nghề",
+    description: "Tự cài đặt và huấn luyện AI skill phù hợp với chuyên môn của bạn",
     number: "03",
   },
   {
-    icon: FileText,
-    title: "Tài liệu độc quyền",
-    description: "Tài liệu chi tiết, dễ hiểu để bạn thực hành ngay",
+    icon: Store,
+    title: "Hướng dẫn thương mại skill",
+    description: "Biết cách đóng gói, bán và vận hành skill AI thành sản phẩm thương mại",
     number: "04",
   },
   {

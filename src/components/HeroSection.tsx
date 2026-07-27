@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import heroCover from "@/assets/hero-cover-16x9.png.asset.json";
+import heroCover from "@/assets/skill-cover.png.asset.json";
 import { Calendar } from "lucide-react";
 
 const HeroSection = () => {
@@ -25,7 +25,7 @@ const HeroSection = () => {
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
           <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
-            EDIT VIDEO <span className="text-primary">TỰ ĐỘNG THEO Ý BẠN</span>
+            KẾ THỪA SKILL - <span className="text-primary">KỶ NGUYÊN AI LÀM TỰ ĐỘNG</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
             Huyết mạch Business Online
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="EDIT VIDEO TỰ ĐỘNG THEO Ý BẠN"
+                alt="KẾ THỪA SKILL - KỶ NGUYÊN AI LÀM TỰ ĐỘNG"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 src={heroCover.url}
               />
