@@ -25,7 +25,7 @@ const HeroSection = () => {
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
           <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
-            EDIT VIDEO <span className="text-primary">TỰ ĐỘNG THEO Ý BẠN</span>
+            KẾ THỪA SKILL - <span className="text-primary">KỶ NGUYÊN AI LÀM TỰ ĐỘNG</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
             Huyết mạch Business Online
