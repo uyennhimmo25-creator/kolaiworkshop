@@ -3,8 +3,8 @@ import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "
 const benefits = [
   {
     icon: Image,
-    title: "Skill tạo ảnh thương hiệu cá nhân",
-    description: "Có ngay bộ kỹ năng tạo hình ảnh thương hiệu cá nhân bằng AI, sẵn sàng dùng ngay",
+    title: "5 skill super Vip",
+    description: "Tặng ngay bộ 5 skill VIP cao cấp để bán hàng, tạo nội dung và tự động hóa công việc với AI",
     number: "01",
   },
   {
