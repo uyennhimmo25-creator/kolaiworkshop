@@ -3,14 +3,14 @@ import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "
 const benefits = [
   {
     icon: Image,
-    title: "5 skill super Vip",
-    description: "Tặng ngay bộ 5 skill VIP cao cấp để bán hàng, tạo nội dung và tự động hóa công việc với AI",
+    title: "1 trang skill cài sẵn 28 Skill",
+    description: "Truy cập ngay bộ 28 skill AI được cài đặt sẵn, sẵn sàng để bán hàng và tự động hóa công việc",
     number: "01",
   },
   {
     icon: DollarSign,
-    title: "Affiliate marketing skill",
-    description: "Học cách kiếm tiền tự động qua hệ thống affiliate với AI hỗ trợ 24/7",
+    title: "Cách thương mại skill từ A - Z",
+    description: "Học toàn bộ quy trình đóng gói, định giá, bán và vận hành skill AI thành sản phẩm thương mại",
     number: "02",
   },
   {

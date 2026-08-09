@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import heroCover from "@/assets/skill-cover.png.asset.json";
+import heroCover from "@/assets/thuong-mai-skill-cover.png.asset.json";
 import { Calendar } from "lucide-react";
 
 const HeroSection = () => {
@@ -25,7 +25,7 @@ const HeroSection = () => {
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
           <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
-            GPT AGENT - <span className="text-primary">KỶ NGUYÊN AI BÁN HÀNG</span>
+            THỬ THÁCH KIẾM 50$ <span className="text-primary">TỪ AI SKILL</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
             Huyết mạch Business Online
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2.5 bg-accent/10 backdrop-blur rounded-full border border-accent/30 shadow-sm">
             <Calendar className="w-5 h-5 text-accent" />
             <span className="text-base md:text-lg font-bold text-foreground tracking-wide">
-              20:00 ngày 3/8
+              20:00 ngày 10/8
             </span>
           </div>
         </div>
