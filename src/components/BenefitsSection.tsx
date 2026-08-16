@@ -3,20 +3,20 @@ import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "
 const benefits = [
   {
     icon: Image,
-    title: "1 trang skill cài sẵn 28 Skill",
-    description: "Truy cập ngay bộ 28 skill AI được cài đặt sẵn, sẵn sàng để bán hàng và tự động hóa công việc",
+    title: "3 APP AI được build sẵn",
+    description: "Truy cập ngay bộ 3 ứng dụng AI đã được xây dựng hoàn chỉnh, sẵn sàng để bạn sử dụng và kiếm tiền",
     number: "01",
   },
   {
     icon: DollarSign,
-    title: "Cách thương mại skill từ A - Z",
-    description: "Học toàn bộ quy trình đóng gói, định giá, bán và vận hành skill AI thành sản phẩm thương mại",
+    title: "1 Buổi zoom kèm 5 video hướng dẫn từng bước đến thành thạo",
+    description: "Tham gia buổi Zoom trực tiếp và nhận 5 video hướng dẫn chi tiết từ cơ bản đến nâng cao",
     number: "02",
   },
   {
     icon: Wrench,
-    title: "Hướng dẫn tự cài skill theo ngành nghề",
-    description: "Tự cài đặt và huấn luyện AI skill phù hợp với chuyên môn của bạn",
+    title: "Hướng dẫn tự biết build app ứng dụng công việc của mình không phụ thuộc",
+    description: "Tự tay xây dựng app AI theo nhu cầu công việc riêng, không cần phụ thuộc vào bất kỳ ai",
     number: "03",
   },
   {
