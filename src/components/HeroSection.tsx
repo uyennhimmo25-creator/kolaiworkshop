@@ -28,7 +28,7 @@ const HeroSection = () => {
             APP - MONEY <span className="text-primary">with ChatGPT</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold text-muted-foreground max-w-2xl mx-auto">
-            Để Chat GPT kiếm cơm cùng bạn
+            Từ skill → App → Money
           </p>
         </div>
 
