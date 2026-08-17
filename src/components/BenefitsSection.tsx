@@ -28,7 +28,7 @@ const benefits = [
   {
     icon: Gift,
     title: "Quà tặng đặc biệt",
-    description: "Nhận quà tặng độc quyền khi tham gia workshop",
+    description: "Nhận quà tặng độc quyền khi tham gia huấn luyện cấp tốc",
     number: "05",
   },
   {
