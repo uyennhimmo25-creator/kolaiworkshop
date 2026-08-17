@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const CTASection = () => {
   return (
     <section className="py-16 md:py-24 bg-hero-gradient relative overflow-hidden">
@@ -15,18 +17,11 @@ const CTASection = () => {
             Cùng hàng trăm KOL, Affiliate và nhà sáng tạo đang xây dựng đế chế AI của riêng mình.
           </p>
 
-          <div className="relative group w-full">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500" />
-            <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow aspect-video">
-              <iframe
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/olUne4Ql5Ns"
-                title="Cộng đồng Affiliate x AI - BlueOcean"
-              />
-            </div>
-          </div>
+          <Button variant="cta" size="xl" className="group shadow-glow" asChild>
+            <a href="/dang-ky">
+              <span>ĐĂNG KÝ NGAY</span>
+            </a>
+          </Button>
         </div>
       </div>
     </section>
