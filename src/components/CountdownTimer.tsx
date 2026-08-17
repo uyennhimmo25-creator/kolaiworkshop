@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Clock, Users } from "lucide-react";
 
-// Workshop diễn ra: 20:00 ngày 17/8/2026
+// Huấn luyện cấp tốc diễn ra: 20:00 ngày 17/8/2026
 const WORKSHOP_TARGET_MS = new Date(2026, 7, 17, 20, 0, 0).getTime(); // August 17, 2026 20:00
 const MAX_SLOTS = 50;
 
@@ -48,7 +48,7 @@ const CountdownTimer = () => {
     <div className="mt-8 space-y-4">
       <div className="flex items-center justify-center gap-2 text-accent font-semibold">
         <Clock className="w-5 h-5" />
-        <span>Workshop bắt đầu sau:</span>
+        <span>Huấn luyện cấp tốc bắt đầu sau:</span>
       </div>
 
       <div className="flex justify-center gap-3 md:gap-4">

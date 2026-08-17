@@ -19,7 +19,7 @@ const SpeakerSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Diễn giả Workshop
+              Diễn giả Huấn luyện cấp tốc
             </h2>
           </div>
 

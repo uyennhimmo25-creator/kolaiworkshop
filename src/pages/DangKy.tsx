@@ -12,13 +12,13 @@ const DangKy = () => {
 
   const tickets = {
     free: {
-      title: "Vé Tham Gia Workshop",
+      title: "Vé Tham Gia Huấn Luyện cấp tốc",
       subtitle: "Mời 1 ly cà phê – tấm vé của thành viên yêu quý ☕",
       price: "100,000",
       qr: qr100k,
       color: "from-primary to-accent",
       benefits: [
-        "Tham gia Workshop KOL AI trực tuyến",
+        "Tham gia Huấn luyện cấp tốc KOL AI trực tuyến",
         "Nhận tài liệu & slide bài giảng",
         "Cơ hội Q&A trực tiếp",
         "Replay Zoom trong 7 ngày",
@@ -59,7 +59,7 @@ const DangKy = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary mb-2">
             Đăng Ký Nhận Vé
           </h1>
-          <p className="text-muted-foreground">Workshop KOL AI – KHAI LỘC</p>
+          <p className="text-muted-foreground">Huấn luyện cấp tốc KOL AI – KHAI LỘC</p>
         </div>
 
         {/* Steps */}
@@ -118,7 +118,7 @@ const DangKy = () => {
               <h3 className="font-bold text-foreground">Vé dành cho 3 người tham gia</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Đăng ký <strong className="text-primary">1 vé cho cả 3 người</strong> – rủ thêm bạn bè, anh em cùng tham gia workshop với mức giá ưu đãi chỉ <strong className="text-primary">199,000 VNĐ</strong>. Tiết kiệm hơn khi đi cùng nhau!
+              Đăng ký <strong className="text-primary">1 vé cho cả 3 người</strong> – rủ thêm bạn bè, anh em cùng tham gia huấn luyện cấp tốc với mức giá ưu đãi chỉ <strong className="text-primary">199,000 VNĐ</strong>. Tiết kiệm hơn khi đi cùng nhau!
             </p>
             <p className="text-sm text-foreground mt-3 font-medium">
               💎 Bạn là người có sức ảnh hưởng và rất quan trọng đối với mọi người. Chào đón những người Anh Em cùng bạn tham gia!

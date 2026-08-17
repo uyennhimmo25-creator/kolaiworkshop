@@ -17,7 +17,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary/60 backdrop-blur rounded-full border border-primary/30">
             <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />
             <span className="text-xs font-semibold tracking-widest text-primary uppercase">
-              Workshop 1 lần duy nhất
+              Huấn Luyện cấp tốc 1 lần duy nhất
             </span>
           </div>
         </div>
