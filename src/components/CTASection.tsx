@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const CTASection = () => {
   return (
     <section className="py-16 md:py-24 bg-hero-gradient relative overflow-hidden">
