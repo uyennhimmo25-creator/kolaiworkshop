@@ -3,14 +3,14 @@ import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "
 const benefits = [
   {
     icon: Image,
-    title: "3 APP AI được build sẵn",
-    description: "Truy cập ngay bộ 3 ứng dụng AI đã được xây dựng hoàn chỉnh, sẵn sàng để bạn sử dụng và kiếm tiền",
+    title: "3 Skill: Tạo video tự động, Edit video tự động, Xây kênh tự động",
+    description: "Nhận trọn bộ 3 skill cài sẵn giúp bạn tạo video, edit video và xây kênh hoàn toàn tự động",
     number: "01",
   },
   {
     icon: DollarSign,
-    title: "1 Buổi zoom kèm 5 video hướng dẫn từng bước đến thành thạo",
-    description: "Tham gia buổi Zoom trực tiếp và nhận 5 video hướng dẫn chi tiết từ cơ bản đến nâng cao",
+    title: "1 buổi zoom kèm 3 video hướng dẫn",
+    description: "Tham gia buổi Zoom trực tiếp và nhận 3 video hướng dẫn chi tiết từng bước",
     number: "02",
   },
   {
