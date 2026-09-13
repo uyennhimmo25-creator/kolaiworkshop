@@ -2,20 +2,31 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2, MessageCircle, Gift, Users } from "lucide-react";
 import { Link } from "react-router-dom";
-import qr100k from "@/assets/qr-100k.png";
+import qr135k from "@/assets/qr-135k.jpg.asset.json";
 import qr199k from "@/assets/qr-199k.jpg";
 
 type TicketType = "free" | "group";
 
+type TicketInfo = {
+  title: string;
+  subtitle: string;
+  price: string;
+  vndPrice?: string;
+  qr: string | { url: string };
+  color: string;
+  benefits: string[];
+};
+
 const DangKy = () => {
   const [activeTicket, setActiveTicket] = useState<TicketType>("free");
 
-  const tickets = {
+  const tickets: Record<TicketType, TicketInfo> = {
     free: {
       title: "Vé Tham Gia Huấn Luyện cấp tốc",
       subtitle: "Mời 1 ly cà phê – tấm vé của thành viên yêu quý ☕",
-      price: "100,000",
-      qr: qr100k,
+      price: "5$",
+      vndPrice: "135K",
+      qr: qr135k,
       color: "from-primary to-accent",
       benefits: [
         "Tham gia Huấn luyện cấp tốc KOL AI trực tuyến",
@@ -150,9 +161,10 @@ const DangKy = () => {
             {/* Price */}
             <div className="text-center mb-6">
               <p className="text-sm text-muted-foreground">Số tiền chuyển khoản</p>
-              <p className="text-3xl font-extrabold text-primary">
-                {current.price} <span className="text-lg">VNĐ</span>
-              </p>
+              <p className="text-3xl font-extrabold text-primary">{current.price}</p>
+              {current.vndPrice && (
+                <p className="text-sm text-muted-foreground mt-1">~ {current.vndPrice} VNĐ</p>
+              )}
               {activeTicket === "group" && (
                 <p className="text-xs text-accent font-semibold mt-1">Dành cho 3 người tham gia</p>
               )}
@@ -161,8 +173,8 @@ const DangKy = () => {
             {/* QR */}
             <div className="flex justify-center mb-4">
               <img
-                src={current.qr}
-                alt={`QR thanh toán ${current.price} VNĐ`}
+                src={typeof current.qr === "string" ? current.qr : current.qr.url}
+                alt={`QR thanh toán ${current.price}`}
                 className="w-64 rounded-xl shadow-card"
               />
             </div>
