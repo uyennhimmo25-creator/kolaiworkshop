@@ -14,8 +14,9 @@ const DangKy = () => {
     free: {
       title: "Vé Tham Gia Huấn Luyện cấp tốc",
       subtitle: "Mời 1 ly cà phê – tấm vé của thành viên yêu quý ☕",
-      price: "100,000",
-      qr: qr100k,
+      price: "5$",
+      vndPrice: "135K",
+      qr: qr135k,
       color: "from-primary to-accent",
       benefits: [
         "Tham gia Huấn luyện cấp tốc KOL AI trực tuyến",
