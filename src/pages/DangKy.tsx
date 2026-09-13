@@ -161,9 +161,10 @@ const DangKy = () => {
             {/* Price */}
             <div className="text-center mb-6">
               <p className="text-sm text-muted-foreground">Số tiền chuyển khoản</p>
-              <p className="text-3xl font-extrabold text-primary">
-                {current.price} <span className="text-lg">VNĐ</span>
-              </p>
+              <p className="text-3xl font-extrabold text-primary">{current.price}</p>
+              {current.vndPrice && (
+                <p className="text-sm text-muted-foreground mt-1">~ {current.vndPrice} VNĐ</p>
+              )}
               {activeTicket === "group" && (
                 <p className="text-xs text-accent font-semibold mt-1">Dành cho 3 người tham gia</p>
               )}
@@ -172,8 +173,8 @@ const DangKy = () => {
             {/* QR */}
             <div className="flex justify-center mb-4">
               <img
-                src={current.qr}
-                alt={`QR thanh toán ${current.price} VNĐ`}
+                src={typeof current.qr === "string" ? current.qr : current.qr.url}
+                alt={`QR thanh toán ${current.price}`}
                 className="w-64 rounded-xl shadow-card"
               />
             </div>
