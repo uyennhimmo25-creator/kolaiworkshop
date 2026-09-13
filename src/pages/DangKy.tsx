@@ -7,10 +7,20 @@ import qr199k from "@/assets/qr-199k.jpg";
 
 type TicketType = "free" | "group";
 
+type TicketInfo = {
+  title: string;
+  subtitle: string;
+  price: string;
+  vndPrice?: string;
+  qr: string | { url: string };
+  color: string;
+  benefits: string[];
+};
+
 const DangKy = () => {
   const [activeTicket, setActiveTicket] = useState<TicketType>("free");
 
-  const tickets = {
+  const tickets: Record<TicketType, TicketInfo> = {
     free: {
       title: "Vé Tham Gia Huấn Luyện cấp tốc",
       subtitle: "Mời 1 ly cà phê – tấm vé của thành viên yêu quý ☕",
