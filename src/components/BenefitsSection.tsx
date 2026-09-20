@@ -3,14 +3,14 @@ import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "
 const benefits = [
   {
     icon: Image,
-    title: "3 Skill: Tạo video tự động, Edit video tự động, Xây kênh tự động",
-    description: "Nhận trọn bộ 3 skill cài sẵn giúp bạn tạo video, edit video và xây kênh hoàn toàn tự động",
+    title: "1 Đội 3 AI agent làm việc thay mình tích hợp sẵn Skill",
+    description: "Nhận ngay đội 3 AI agent làm việc thay bạn, tích hợp sẵn skill hoàn chỉnh",
     number: "01",
   },
   {
     icon: DollarSign,
-    title: "1 buổi zoom kèm 3 video hướng dẫn",
-    description: "Tham gia buổi Zoom trực tiếp và nhận 3 video hướng dẫn chi tiết từng bước",
+    title: "Chia sẻ những cách xây kênh bằng subagent khác biệt",
+    description: "Hé lộ cách xây kênh bằng subagent khác biệt mà ít ai biết đến",
     number: "02",
   },
   {
