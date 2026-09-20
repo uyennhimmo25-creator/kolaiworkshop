@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Clock, Users } from "lucide-react";
 
-// Huấn luyện cấp tốc diễn ra: 20:00 ngày 14/9/2026
-const WORKSHOP_TARGET_MS = new Date(2026, 8, 14, 20, 0, 0).getTime(); // September 14, 2026 20:00
+// Huấn luyện cấp tốc diễn ra: 20:00 ngày 21/9/2026
+const WORKSHOP_TARGET_MS = new Date(2026, 8, 21, 20, 0, 0).getTime(); // September 21, 2026 20:00
 const MAX_SLOTS = 50;
 
 const CountdownTimer = () => {

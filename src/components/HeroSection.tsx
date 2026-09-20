@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import heroCover from "@/assets/xay-kenh-az-cover.png.asset.json";
+import heroCover from "@/assets/nuoi-agent-cover.png.asset.json";
 import { Calendar } from "lucide-react";
 
 const HeroSection = () => {
@@ -24,11 +24,11 @@ const HeroSection = () => {
 
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
-          <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3 whitespace-nowrap">
-            COMBO XÂY KÊNH <span className="text-primary">A - Z</span>
+          <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3">
+            NUÔI AGENT CÀY THAY MÌNH <span className="text-primary whitespace-nowrap">24/7</span>
           </h1>
           <p className="text-base md:text-2xl font-bold text-muted-foreground max-w-3xl mx-auto">
-            TẠO VIDEO - EDIT VIDEO - TỰ ĐỘNG XÂY KÊNH
+            Từ skill tiến hóa thành 1 Agent sống thực sự
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2.5 bg-accent/10 backdrop-blur rounded-full border border-accent/30 shadow-sm">
             <Calendar className="w-5 h-5 text-accent" />
             <span className="text-base md:text-lg font-bold text-foreground tracking-wide">
-              20:00 ngày 14/9
+              20:00 ngày 21/9
             </span>
           </div>
         </div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="Combo xây kênh A - Z: tạo video, edit video, tự động xây kênh"
+                alt="Nuôi Agent cày thay mình 24/7 – từ skill tiến hóa thành 1 Agent sống thực sự"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 src={heroCover.url}
               />
