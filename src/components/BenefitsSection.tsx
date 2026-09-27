@@ -1,22 +1,22 @@
-import { Image, DollarSign, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "lucide-react";
+import { Users, Layers, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "lucide-react";
 
 const benefits = [
   {
-    icon: Image,
-    title: "1 Đội 3 AI agent làm việc thay mình tích hợp sẵn Skill",
-    description: "Nhận ngay đội 3 AI agent làm việc thay bạn, tích hợp sẵn skill hoàn chỉnh",
+    icon: Users,
+    title: "Tự xây dựng đội ngũ Agent theo ý bạn muốn",
+    description: "Tự tay thiết kế và dựng đội ngũ Agent làm việc theo đúng ý bạn",
     number: "01",
   },
   {
-    icon: DollarSign,
-    title: "Chia sẻ những cách xây kênh bằng subagent khác biệt",
-    description: "Hé lộ cách xây kênh bằng subagent khác biệt mà ít ai biết đến",
+    icon: Layers,
+    title: "3 tầng Agent tự động hóa mà 90% người dùng AI không biết",
+    description: "Hé lộ cấu trúc 3 tầng Agent tự động hóa ít người dùng AI nào biết đến",
     number: "02",
   },
   {
     icon: Wrench,
-    title: "Hướng dẫn tự biết build app ứng dụng công việc của mình không phụ thuộc",
-    description: "Tự tay xây dựng app AI theo nhu cầu công việc riêng, không cần phụ thuộc vào bất kỳ ai",
+    title: "Chạy Agent trên máy bạn và bạn có thể thương mại nó",
+    description: "Agent chạy trực tiếp trên máy của bạn và bạn hoàn toàn có thể thương mại nó",
     number: "03",
   },
   {
