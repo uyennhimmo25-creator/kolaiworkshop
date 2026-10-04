@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import CountdownTimer from "@/components/CountdownTimer";
-import heroCover from "@/assets/cong-xuong-agent-cover.png.asset.json";
+import heroCover from "@/assets/nhan-su-agent-cover.png.asset.json";
 import { Calendar } from "lucide-react";
 
 const HeroSection = () => {
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2.5 bg-accent/10 backdrop-blur rounded-full border border-accent/30 shadow-sm">
             <Calendar className="w-5 h-5 text-accent" />
             <span className="text-base md:text-lg font-bold text-foreground tracking-wide">
-              20:00 ngày 28/9
+              20:00 ngày 4/10
             </span>
           </div>
         </div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="absolute -inset-1 bg-gradient-to-tr from-primary via-accent to-primary rounded-2xl blur opacity-60 group-hover:opacity-90 transition duration-500 animate-pulse-soft" />
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow">
               <img
-                alt="Xây dựng Công xưởng Agent – Quy trình tự động hóa đầu tiên ở Việt Nam do Agent vận hành"
+                alt="Thương Mại Nhân Sự Agent – Nghề giá cao không bao giờ lỗi thời"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 src={heroCover.url}
               />
