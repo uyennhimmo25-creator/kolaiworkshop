@@ -126,6 +126,11 @@
     animation: marquee 28s linear infinite;
     will-change: transform;
   }
+
+  .animate-marquee-slow {
+    animation: marquee 45s linear infinite;
+    will-change: transform;
+  }
 }
 
 @keyframes marquee {
