@@ -25,10 +25,10 @@ const HeroSection = () => {
         {/* Main title */}
         <div className="text-center max-w-4xl mx-auto mb-6">
           <h1 className="text-[clamp(1.1rem,4.5vw,3rem)] font-black text-foreground leading-[1.1] tracking-tight mb-3">
-            XÂY DỰNG <span className="text-primary whitespace-nowrap">CÔNG XƯỞNG AGENT</span>
+            THƯƠNG MẠI <span className="text-primary whitespace-nowrap">SUBAGENT</span>
           </h1>
           <p className="text-base md:text-2xl font-bold text-muted-foreground max-w-3xl mx-auto">
-            Quy trình tự động hóa đầu tiên ở Việt Nam do Agent vận hành
+            Để từ AI trở thành đội ngũ làm việc thật sự
           </p>
         </div>
 
