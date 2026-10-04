@@ -3,20 +3,20 @@ import { Users, Layers, Wrench, Store, Gift, Sparkles, ArrowUpRight } from "luci
 const benefits = [
   {
     icon: Users,
-    title: "Tự xây dựng đội ngũ Agent theo ý bạn muốn",
-    description: "Tự tay thiết kế và dựng đội ngũ Agent làm việc theo đúng ý bạn",
+    title: "Cách huấn luyện DNA thương hiệu cá nhân nhanh nhất",
+    description: "Nắm được cách huấn luyện DNA thương hiệu cá nhân nhanh nhất",
     number: "01",
   },
   {
     icon: Layers,
-    title: "3 tầng Agent tự động hóa mà 90% người dùng AI không biết",
-    description: "Hé lộ cấu trúc 3 tầng Agent tự động hóa ít người dùng AI nào biết đến",
+    title: "Tạo sàn thương mại từ con số 0 đến có thể chuyển đổi",
+    description: "Xây sàn thương mại từ con số 0 đến khi có thể chuyển đổi",
     number: "02",
   },
   {
     icon: Wrench,
-    title: "Chạy Agent trên máy bạn và bạn có thể thương mại nó",
-    description: "Agent chạy trực tiếp trên máy của bạn và bạn hoàn toàn có thể thương mại nó",
+    title: "Cài được mọi Agent như ý, chạy tự động",
+    description: "Cài đặt mọi Agent theo ý muốn và để chúng chạy tự động",
     number: "03",
   },
   {
